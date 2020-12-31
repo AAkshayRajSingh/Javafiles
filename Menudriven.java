@@ -1,0 +1,50 @@
+import java.util.Scanner;
+class Menudriven
+{
+int a,b,x;
+  Menudriven()
+   {
+   
+     Scanner s=new Scanner(System.in);
+     System.out.println("First value=");
+     a=s.nextInt();
+     System.out.println("Second value=");
+     b=s.nextInt();
+	 System.out.println("Enter your choice:");
+     x=s.nextInt();
+   }
+   public static void main(String args[])
+	{
+	     System.out.print("\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.Remainder");
+	     Menudriven obj2=new Menudriven();
+         Opr obj1=new Opr(obj2.a,obj2.b,obj2.x);
+
+	}
+  
+}
+class Opr
+{
+  Opr(int a,int b,int x)
+  {
+    switch(x)
+    {
+       case 1:
+             System.out.println("Addition="+(a+b));
+             break;
+       case 2:
+             System.out.println("Subtraction="+(a-b));
+             break;
+       case 3:
+             System.out.println("Multiplication="+(a*b));
+             break;
+       case 4:
+             System.out.println("Division="+(a/b));
+             break;
+       case 5:
+              System.out.println("Remainder="+(a%b));
+              break;
+       default:
+               System.out.println("Invalid choice");
+    }
+    }
+  }

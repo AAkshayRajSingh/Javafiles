@@ -8,9 +8,8 @@ A Hospital management iCare system is a  Management software tool that helps you
 * [Screenshots](#screenshots)
 * [Setup](#setup)
 * [Usage](#usage)
+* [Source Code of Index.cshtml](#Source Code of Index.cshtml)
 * [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
-* [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
 
 

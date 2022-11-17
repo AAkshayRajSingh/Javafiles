@@ -40,32 +40,55 @@ A Hospital management iCare system is a  Management software tool that helps you
 
 
 ## Features:
+Login Screen:
 
 - iCARE shall provide a simple way to log in using a pen only. The user taps his name and can 
 "ink" his password in the box. 
+ 
+ Worker Dashboard:
+ 
+ A worker(Doctor/Nurse) should be able to login through his/her credentials into the iCare System and should the following functionalities in the system.
+  
+  - Entry and Manage Patients
+  
+  - Display and Assign Patients
+  
+  - Treat and Update patient Records
+  
+  - Palette
+  
+  - My Board
+  
+  - Manage Documents
+  
+  - Drug Management System
+  
+  Administrator Dashboard:
+ 
+  - An Administrator can able to add or delete the worker from the System.
+  
+  - Administrator can add another new Administrator as well into the System.
 
 - "iCARE Board" and "My Board" are two main forms to be provided. iCARE Board shall bring 
 up patient lists corresponding to the geographic unit view. Worker will assign himself to patients 
 from the iCARE Board. "My Board" shall show only the active patients list of the logged on 
 person, and hence My Board view can be different for doctors and nurses.  
 
+- Entry and Manage Patients records will provide an interface to edit and manage the patient records by the worker.
+
+- Diplay and Assign patients will show the patient details and worker could assign a patient on himself.
+
 - Palette will be another UI component to help simplify the choosing of documents among large 
 number of potential documents. It's one tablet screen in size so the user can see all choices in 
 one view which consists of a series of buttons for the user to tap on. The Palette shall be able to 
 manage larger number of document choices than can fit on one screen. 
 
-- iCARE shall provide a tool to create a new document and to be able to insert different types of 
+- Manage Documents in iCARE shall provide a tool to create a new document and to be able to insert different types of 
 text into the new and/or the old documents such as treatments, drug orders and prescriptions. 
 This tool should also be able to recognize generic and brand drug names from a standard 
 reference and supports auto completion. 
 
-- iCARE shall provide a tool to import images using a scanner or by browsing the internal stored 
-image files into the application. These imported files will then be converted to PDFs, to become 
-a part of the iCARE documents repository.  
-
-- Every PDF document in iCARE should be tagged with a metadata that includes Patient ID, 
-Date of creation/imported, the user ID of the creator/importer, Modification date, the user ID 
-of the modifier, Brief description. 
+- iCARE shall provide a tool to under Manage Documents to import images using a scanner or by browsing the internal stored image files into the application. These imported files will then be converted to PDFs, to become a part of the iCARE documents repository.  
 
 - Only iCARE administrator has the privileges to add workers (doctors and nurses) into the 
 system, edit and delete their records. The administrator account will be shipped with the system. 
@@ -101,11 +124,6 @@ https://www.youtube.com/watch?v=HeGNMgdQ79M
 - Create a Controller now for all the classes.
 - The views are been created for all the document.
 - Edit the generated .cshtml as per requirements
-
-## Source Code of Index.cshtml:
-
-
-
 
 ## Usage
 How does one go about using it?

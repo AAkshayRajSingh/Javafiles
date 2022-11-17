@@ -5,10 +5,9 @@ A Hospital management iCare system is a  Management software tool that helps you
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [Features](#features)
-* [Screenshots](#screenshots)
+* [Steps to run the Project](#steps-to-run-the-project)
 * [Setup](#setup)
 * [Usage](#usage)
-* [Source Code of Index.cshtml](#Source-Code-of-Index.cshtml)
 * [Project Status](#project-status)
 * [Contact](#contact)
 
@@ -98,26 +97,44 @@ should maintain (but not limited to) the following information: ID, name, addres
 height, weight, bloodGroup, BedID, Treatment area. Each patient record will be associated with 
 zero or more treatment records and a set of digital documents. 
  
+## Development Procedure:
+- Create a project in visual studio with C#.
+- search MVC then choose MVC.net web application
+- Now we connect the Sql server 
+- In the project directory go to models ->add new item ->Data (under c#) ->ADO.new entity data model ->Name it as you want to ->EF designer from DB 
+- Create a Controller now for all the classes.
+- The views are been created for all the document.
+- Edit the generated .cshtml as per requirements
+ 
 
+In our Project, along with controllers for each class or table in the Group1_006_iCAREDB database, We have created additional controllers for implementing all the functionalities according to the problem statement. The following listed are the extra controllers :
 
-## Screenshots
-![Example screenshot](./img/screenshot.png)
-![Uploading image.png…]()
+1)      Default Controller:  “Default Controller” using ”icareuser class”.  This controller is for creating the login , admin and worker dashboard pages. Under this respective View, We have 3 .cshtml pages: ‘AdminDashBoard.cshtml’, ‘Login.cshtml’, ‘UserDashBoard.cshtml’.
+ 
+2)      Default1 Controller: “Default1 Controller” using patientassignment. This Controller is used for implementing  ‘MyBoard’ page.
+ 
+3)      Documentdetails1 Controller: This controller is developed using documentdetails class. This controller is used for implementing ‘Manage Document’ page.
+ 
+4)      Palete Controller: This controller is developed using documentdetails class. This controller is used for implementing ‘Palette’ page.
+ 
 
-<!-- If you have screenshots you'd like to share, include them here. -->
+## Steps To Run the project:
 
+1)      Download the icare_10_11.zip file .
+2)      Download the Group1_006_iCAREDB.bak and drug.bak
+3)      Open Visual Studio.
+4)      Extract the icare_10_11.zip file into a new location. In visual Studio, Click Open that project folder.
+5)      Go to tools-> connect to server- enter server details, select  Group1_006_iCAREDB database and click test connection
+6)      Go to tools-> connect to server- enter server details, select  drug  database and click test connection
+7)      In Project Explorer, Click Group1_006_iCAREAPP.sln file, Select the default controller or any page and Click on Run.
+8)      The web pages will open in the browser.
+9)      TheFYI While accessing one of the page in the dahboard there is a breakage of link which is a signal of warning a quick resolution is to remove the extra characters (%20.) from the URL. 
 
 ## Setup
 - Install Visual Studio
 - Install SSMS  Microsoft Sql Server Management studio
 - Create a database in the SSMS and now create tables relevant to the classes in the iCARE System.
 - Create an MVC project in Visual studio.
-
-Please find the below link for detailed setup:
-https://www.youtube.com/watch?v=HeGNMgdQ79M
-
-## Steps to follow:
-- Create a project in visual studio with C#.
 - search MVC then choose MVC.net web application
 - Now we connect the Sql server 
 - In the project directory go to models ->add new item ->Data (under c#) ->ADO.new entity data model ->Name it as you want to ->EF designer from DB 
